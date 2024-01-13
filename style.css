@@ -18,7 +18,7 @@ header {
     top: 0;
     left: 0;
     width:100%;
-    padding: 20px 100px;
+    padding: 15px 100px;
     background: #483269;
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+
     
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+
+}
+
+.wrapper.active {
+    height: 520px;
+
 }
 
 .wrapper .form-box {
